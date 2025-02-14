@@ -1,4 +1,4 @@
-# Hire Duniya - AI-Powered Job Search Portal
+# Hire Duniya - Job Search Portal (Built in Mins🔥)
 
 Hire Duniya is a modern job search portal that utilizes the **JSearch API**, **Tailwind CSS (CDN)**, and **ChatGPT** to provide a seamless job-hunting experience. This project was a fun experiment that helped me explore the possibilities of AI in web development, allowing me to go from scratch to a fully functional website in **less than 60 minutes**.
 
