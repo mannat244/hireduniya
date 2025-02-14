@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HireDuniya - Job Details</title>
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS (reuse the same base styles as index.html) -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fbfbfb; /* white background */
+        color: #333333;
+      }
+      .navbar {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .logo {
+        color: #ff6700;
+        font-weight: 700;
+      }
+      .nav-links a {
+        color: #333333;
+      }
+      .nav-links a:hover {
+        color: #ff6700;
+      }
+      .material-icons {
+        vertical-align: middle;
+        font-size: 20px;
+      }
+    </style>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="navbar shadow">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="logo text-2xl">HireDuniya</a>
+        <ul class="nav-links flex space-x-6 text-sm">
+          <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+          <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-6 flex-1">
+      <section id="jobDetail" class="bg-white rounded-lg shadow p-6">
+        <!-- Job details will be injected by job-detail.js -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+        <p>&copy; 2025 HireDuniya. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="job-detail.js"></script>
+  </body>
+</html>

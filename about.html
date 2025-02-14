@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HireDuniya - About</title>
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS (reuse base styles) -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+      }
+      .navbar {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .logo {
+        color: #ff6700;
+        font-weight: 700;
+      }
+      .nav-links a {
+        color: #333333;
+      }
+      .nav-links a:hover {
+        color: #ff6700;
+      }
+      .material-icons {
+        vertical-align: middle;
+        font-size: 20px;
+        color: #666666;
+      }
+    </style>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="navbar shadow">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="logo text-2xl">HireDuniya</a>
+        <ul class="nav-links flex space-x-6 text-sm">
+          <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+          <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-1">
+      <!-- Banner -->
+      <section class="text-center bg-gray-100 rounded-lg p-8 mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-orange-500 mb-2">
+          About HireDuniya
+        </h1>
+        <p class="text-lg text-gray-700">
+          Empowering your career journey with modern technology and a user-friendly platform.
+        </p>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Our Story -->
+        <div class="bg-white rounded-lg shadow p-6">
+          <h2 class="text-2xl font-semibold text-orange-500 mb-4">Our Story</h2>
+          <p class="text-gray-700 leading-relaxed">
+            HireDuniya was founded to connect talented professionals with top employers.
+            We simplify your job search with advanced filters, real-time listings, and a direct apply process.
+          </p>
+        </div>
+        <!-- Our Mission -->
+        <div class="bg-white rounded-lg shadow p-6">
+          <h2 class="text-2xl font-semibold text-orange-500 mb-4">Our Mission</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Our mission is to deliver a reliable, user-friendly platform that helps you discover opportunities
+            matching your skills and aspirations.
+          </p>
+        </div>
+        <!-- Our Vision -->
+        <div class="bg-white rounded-lg shadow p-6">
+          <h2 class="text-2xl font-semibold text-orange-500 mb-4">Our Vision</h2>
+          <p class="text-gray-700 leading-relaxed">
+            We envision a world where every professional finds their dream job and every employer finds exceptional talent.
+          </p>
+        </div>
+        <!-- Why Choose Us -->
+        <div class="bg-white rounded-lg shadow p-6">
+          <h2 class="text-2xl font-semibold text-orange-500 mb-4">Why HireDuniya?</h2>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+            <li>Real-time job postings</li>
+            <li>Intuitive filtering and search</li>
+            <li>Responsive and mobile-friendly design</li>
+            <li>Trusted employers worldwide</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+        <p>&copy; 2025 HireDuniya. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

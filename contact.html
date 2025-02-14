@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HireDuniya - Contact</title>
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS (reuse base styles) -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+      }
+      .navbar {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .logo {
+        color: #ff6700;
+        font-weight: 700;
+      }
+      .nav-links a {
+        color: #333333;
+      }
+      .nav-links a:hover {
+        color: #ff6700;
+      }
+      .material-icons {
+        vertical-align: middle;
+        font-size: 20px;
+      }
+    </style>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="navbar shadow">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="logo text-2xl">HireDuniya</a>
+        <ul class="nav-links flex space-x-6 text-sm">
+          <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+          <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-1">
+      <!-- Banner -->
+      <section class="text-center bg-gray-100 rounded-lg p-8 mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-orange-500 mb-2">
+          Contact HireDuniya
+        </h1>
+        <p class="text-lg text-gray-700">
+          We’d love to hear from you. Reach out with any questions or suggestions!
+        </p>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Contact Info -->
+        <div class="bg-white rounded-lg shadow p-6">
+          <h2 class="text-2xl font-semibold text-orange-500 mb-4">Our Office</h2>
+          <p class="flex items-center text-gray-700 mb-2">
+            <i class="material-icons mr-2">location_on</i>
+            1234 Blue Avenue, Tech City, Country
+          </p>
+          <p class="flex items-center text-gray-700 mb-2">
+            <i class="material-icons mr-2">phone</i>
+            +1 (123) 456-7890
+          </p>
+          <p class="flex items-center text-gray-700 mb-2">
+            <i class="material-icons mr-2">email</i>
+            support@hireduniya.com
+          </p>
+          <p class="text-gray-700">
+            Visit our office during business hours (Mon-Fri, 9am-5pm) for in-person assistance.
+          </p>
+        </div>
+
+        <!-- Contact Form (Using Formspree) -->
+        <div class="bg-white rounded-lg shadow p-6">
+          <h2 class="text-2xl font-semibold text-orange-500 mb-4">Get in Touch</h2>
+          <form
+            action="https://formspree.io/f/movjkvgj"
+            method="POST"
+            class="space-y-4"
+          >
+            <div>
+              <label for="name" class="block font-medium mb-1">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your Name"
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+            <div>
+              <label for="email" class="block font-medium mb-1">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                required
+                placeholder="Your Email"
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+            <div>
+              <label for="message" class="block font-medium mb-1">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Your Message"
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition inline-flex items-center"
+            >
+              <i class="material-icons mr-2">send</i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+        <p>&copy; 2025 HireDuniya. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

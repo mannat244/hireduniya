@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HireDuniya - Home</title>
+
+    <!-- Tailwind Play CDN for development -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS (plain CSS with our base styles) -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fbfbfb; /* white background */
+        color: #333333;
+      }
+      /* Navbar */
+      .navbar {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .logo {
+        color: #ff6700; /* bright orange */
+        font-weight: 700;
+      }
+      .nav-links a {
+        color: #333333;
+      }
+      .nav-links a:hover {
+        color: #ff6700;
+      }
+      /* Utility for Material Icons */
+      .material-icons {
+        vertical-align: middle;
+        font-size: 20px;
+      }
+    </style>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="navbar shadow">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="logo text-2xl">HireDuniya</a>
+        <ul class="nav-links flex space-x-6 text-sm">
+          <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+          <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-1">
+      <!-- Hero Section -->
+      <section class="text-center py-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-orange-500 mb-2">
+          Find Your Dream Job
+        </h1>
+        <p class="text-gray-600">
+          Search among thousands of opportunities and advance your career.
+        </p>
+      </section>
+
+      <!-- Search & Filters -->
+      <section class="mb-6 bg-white rounded-lg shadow p-4">
+        <div class="flex flex-col md:flex-row items-center gap-2 mb-4">
+          <!-- Search Bar -->
+          <div class="flex flex-1 border border-gray-200 rounded-full overflow-hidden">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search jobs, keywords, or companies"
+              class="px-4 py-2 flex-1 outline-none"
+            />
+            <button
+              id="searchBtn"
+              class="bg-orange-500 text-white px-6 py-2 hover:bg-orange-600 transition"
+            >
+              <i class="material-icons text-inherit">search</i>
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-2">
+          <!-- Location Filter -->
+          <div class="flex items-center border border-gray-200 rounded-full px-3 py-2">
+            <i class="material-icons mr-2">location_on</i>
+            <select id="locationFilter" class="outline-none bg-transparent">
+              <option value="">Any Location</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Canada">Canada</option>
+              <option value="Australia">Australia</option>
+            </select>
+          </div>
+          <!-- Job Type Filter -->
+          <div class="flex items-center border border-gray-200 rounded-full px-3 py-2">
+            <i class="material-icons mr-2">work</i>
+            <select id="jobTypeFilter" class="outline-none bg-transparent">
+              <option value="Any">Any Type</option>
+              <option value="FULLTIME">Full Time</option>
+              <option value="PARTTIME">Part Time</option>
+              <option value="CONTRACTOR">Contract</option>
+              <option value="INTERN">Intern</option>
+            </select>
+          </div>
+          <!-- Date Filter -->
+          <div class="flex items-center border border-gray-200 rounded-full px-3 py-2">
+            <i class="material-icons mr-2">date_range</i>
+            <select id="dateFilter" class="outline-none bg-transparent">
+              <option value="all">Any Time</option>
+              <option value="today">Today</option>
+              <option value="3days">Last 3 Days</option>
+              <option value="week">This Week</option>
+              <option value="month">This Month</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Loading Spinner -->
+      <div
+        id="loading"
+        class="flex items-center justify-center mb-6 hidden"
+      >
+        <div
+          class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-orange-500"
+        ></div>
+        <p class="ml-3 text-orange-500 font-medium">Loading...</p>
+      </div>
+
+      <!-- Job Listings -->
+      <section
+        id="jobListings"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- Job cards will be injected here by script.js -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+        <p>&copy; 2025 HireDuniya. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
